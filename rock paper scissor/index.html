@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p>Choose your weapon!</p>
+            <div class="name-bar">
+                <input id="player-name-input" type="text" placeholder="Enter your name" aria-label="Player name" maxlength="17">
+                <button id="save-name" class="play-again-btn" type="button">Save Name</button>
+            </div>
+        </header>
+        
+        <div class="game-area">
+            <div class="choices">
+                <div class="player-choice">
+                    <h3 id="player-choice-title"></h3>
+                    <div id="player-image" class="choice-image">❓</div>
+                </div>
+                
+                <div class="vs">
+                    <h2>VS</h2>
+                </div>
+                
+                <div class="computer-choice">
+                    <h3>Computer Choice</h3>
+                    <div id="computer-image" class="choice-image">❓</div>
+                </div>
+            </div>
+            
+            <div class="game-buttons">
+                <button class="choice-btn" data-choice="0">
+                    <span class="emoji">&#x1FAA8;
+</span>
+                    <span class="label">Rock</span>
+                </button>
+                <button class="choice-btn" data-choice="1">
+                    <span class="emoji">&#x1F4C4;</span>
+                    <span class="label">Paper</span>
+                </button>
+                <button class="choice-btn" data-choice="2">
+                    <span class="emoji">&#x2702;</span>
+                    <span class="label">Scissors</span>
+                </button>
+            </div>
+            
+            <div class="result-area">
+                <div id="result-message" class="result-message"></div>
+                <button id="play-again" class="play-again-btn" style="display: none;">Play Again</button>
+            </div>
+            
+            <div class="score-board">
+                <div class="score">
+                    <h3><span id="player-name-label">You</span> Score</h3>
+                    <span id="player-score">0</span>
+                </div>
+                <div class="score">
+                    <h3>Computer Score</h3>
+                    <span id="computer-score">0</span>
+                </div>
+                <div class="score">
+                    <h3>Draws</h3>
+                    <span id="draw-score">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
